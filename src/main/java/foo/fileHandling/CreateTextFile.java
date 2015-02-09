@@ -64,6 +64,7 @@ public class CreateTextFile {
 			
 			System.out.printf("%s %s\n %s","Enter account number (>0),","first name, last name and balance.","? ");
 		}//end while		
+		
 	}//end addRecord
 	
 	public void closeFile(){
