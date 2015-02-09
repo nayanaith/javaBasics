@@ -15,8 +15,8 @@ public class SendEmailByGmail2 {
 	 public static void main(String args[]) {
 	        final String SMTP_HOST = "smtp.gmail.com";
 	        final String SMTP_PORT = "587";
-	        final String GMAIL_USERNAME = "nayanaith@gmail.com";
-	        final String GMAIL_PASSWORD = "loardNayaisfalone?";
+	        final String GMAIL_USERNAME = "nayanaith.tablet@gmail.com";
+	        final String GMAIL_PASSWORD = "loardNayatablet";
 
 	        System.out.println("Process Started");
 
