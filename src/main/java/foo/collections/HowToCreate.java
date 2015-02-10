@@ -7,6 +7,7 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.ListIterator;
 import java.util.Map;
 import java.util.Set;
 import java.util.SortedSet;
@@ -38,8 +39,16 @@ public class HowToCreate {
 	
 	Map <String , Integer> myMap = new HashMap <String, Integer> ();	
 	
-	Iterator<String> iterator=list.iterator();
 	
+	//Iterator--
+    ListIterator<String> iterator=list.listIterator(list.size());
+    System.out.println("\nReversed List:");
+    
+    while(iterator.hasPrevious()){
+        System.out.printf("%s  ",iterator.previous());
+	//end iterator
+        
+        
 	//---- some examples
 	List<String> a1 = new ArrayList<String>();
 	a1.add("sdf");
