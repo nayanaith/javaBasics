@@ -16,6 +16,7 @@ public class SendEmailByGmail2 {
 	        final String SMTP_HOST = "smtp.gmail.com";
 	        final String SMTP_PORT = "587";
 	        final String GMAIL_USERNAME = "nayanaith.tablet@gmail.com";
+	        final String GMAIL_USERNAME_RECEIPEINT = "nayanajith.bandara@gfs.com";
 	        final String GMAIL_PASSWORD = "loardNayatablet";
 
 	        System.out.println("Process Started");
@@ -42,8 +43,10 @@ public class SendEmailByGmail2 {
 	        try {
 	            System.out.println("before sending");
 	            message.setFrom(new InternetAddress(GMAIL_USERNAME));
+//	            message.addRecipients(Message.RecipientType.TO,
+//	                    InternetAddress.parse(GMAIL_USERNAME));
 	            message.addRecipients(Message.RecipientType.TO,
-	                    InternetAddress.parse(GMAIL_USERNAME));
+	                    InternetAddress.parse(GMAIL_USERNAME_RECEIPEINT));	            
 	            message.setSubject("My First Email Attempt from Java");
 	            message.setText("Hi, This mail came from Java Application.");
 	            message.setRecipients(Message.RecipientType.TO,
