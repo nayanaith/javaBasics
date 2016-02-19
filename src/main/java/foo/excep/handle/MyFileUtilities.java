@@ -18,15 +18,15 @@ public class MyFileUtilities{
 			System.out.println("** Could not find"+ fileName + " **");
 			f.printStackTrace();
 			return -1;
-		}
+		}		
 		
-		
-		System.out.println("Just opened file: " + fileName);
-		byte x = -1;
+			System.out.println("Just opened file: " + fileName);
+			byte x = -1;
 		try
 		{
 			System.out.println("Reading one byte from file...");
-		x = (byte) file.read();
+			x = (byte) file.read();
+			file.close();
 		}catch(IOException i){
 		System.out.println("** Error reading one byte **");
 		i.printStackTrace();
@@ -34,5 +34,5 @@ public class MyFileUtilities{
 		}
 		System.out.println("Just read " + x);
 		return x;
-	}
-}
+	}//end readOneByte
+}//end MyFileUtilities
