@@ -6,9 +6,9 @@ package foo.excep.handle;
 public class CatchDemo {
     public static void main(String[] args){
         System.out.println("Instantiating a MyFileUtilities object...");
-//        MyFileUtilities util=new MyFileUtilities("E:/programing/java/FilesProcessed/first.txt");
+        MyFileUtilities util=new MyFileUtilities("F:\\programing\\git\\javaBasics\\utils\\first.txt");
        
-        MyFileUtilities util=new MyFileUtilities(args[0]);
+      //  MyFileUtilities util=new MyFileUtilities(args[0]);
         System.out.println("Invoking readOneByte() method...");
         System.out.println(util.readOneByte());
     }

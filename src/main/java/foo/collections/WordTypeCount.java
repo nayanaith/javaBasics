@@ -7,6 +7,8 @@ import java.util.Set;
 import java.util.TreeSet;
 
 public class WordTypeCount {
+	
+	static String[] tokens;
     public static void main (String args[]){
         Map <String,Integer> myMap= new HashMap<String, Integer>();
         createMap(myMap);
@@ -15,11 +17,13 @@ public class WordTypeCount {
     
     private static void createMap(Map <String,Integer> map){
         Scanner scanner=new Scanner(System.in);
+        
+        
+        for(int c=0; c<5;c++){
         System.out.println("Enter a string");
-        
         String input=scanner.nextLine();
-        String[] tokens = input.split(" ");
-        
+        tokens= input.split(" ");
+        }//end for
 //        for(String w:tokens)
 //            System.out.printf("%s\t\t\t", w);
         

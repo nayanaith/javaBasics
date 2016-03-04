@@ -30,7 +30,7 @@ public class Invoice implements Payable{
 		return partDescription;
 	}//end partDescription
 	
-	public void setQuantity(int count){
+	 public void setQuantity(int count){
 		if(count>=0)
 			quantitiy=count;
 		else 
@@ -61,5 +61,7 @@ public class Invoice implements Payable{
 	public double getPaymentAmount() {
 		return getQuantity()*getPricePerItem();
 	}//end getPaymentAmount
+
+
 	
 }//end class Invoice
